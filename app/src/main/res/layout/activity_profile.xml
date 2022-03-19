@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_profile"
+    android:padding="20dp">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="57dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="4dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/white"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:src="@drawable/ic_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029" />
+
+    <ImageView
+        android:id="@+id/img_avatar"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar" />
+
+    <TextView
+        android:id="@+id/tv_EditProfile"
+        android:layout_width="140dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/sofia_pro_medium"
+        android:gravity="center"
+        android:text="Eljad Eendaz"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_avatar" />
+
+    <TextView
+        android:id="@+id/tv_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/sofia_pro_regular"
+        android:text="Full name"
+        android:textColor="@color/manatee"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_EditProfile" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_full_name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="339dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_full_name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_full_name_input"
+            android:layout_width="339dp"
+            android:layout_height="65dp"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:hint="Your full name"
+            android:inputType="text"
+            android:text="Cristiano Ronaldo" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sofia_pro_regular"
+        android:text="Email"
+        android:textColor="@color/manatee"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_full_name" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_email"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="339dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_email">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_email_input"
+            android:layout_width="339dp"
+            android:layout_height="65dp"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:hint="Your E-mail"
+            android:inputType="text"
+            android:text="ronaldo@gmail.com" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/sofia_pro_regular"
+        android:text="Phone"
+        android:textColor="@color/manatee"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_phone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="339dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="16dp"
+        app:hintAnimationEnabled="false"
+        app:hintEnabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_phone">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edt_phone_input"
+            android:layout_width="339dp"
+            android:layout_height="65dp"
+            android:fontFamily="@font/sofia_pro_medium"
+            android:hint="Your phone"
+            android:inputType="text"
+            android:text="+1 (738) 0986 8786" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textview30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Edit Profile"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_EditProfile" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
