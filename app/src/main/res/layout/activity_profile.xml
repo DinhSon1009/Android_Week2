@@ -28,7 +28,7 @@
         android:id="@+id/img_avatar"
         android:layout_width="160dp"
         android:layout_height="160dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/sofia_pro_regular"
         android:text="Email"
         android:textColor="@color/manatee"
@@ -130,7 +130,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/sofia_pro_regular"
         android:text="Phone"
         android:textColor="@color/manatee"
@@ -154,12 +154,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_phone">
 
+
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edt_phone_input"
             android:layout_width="339dp"
             android:layout_height="65dp"
             android:fontFamily="@font/sofia_pro_medium"
-            android:hint="Your phone"
+            android:hint="Your E-mail"
             android:inputType="text"
             android:text="+1 (738) 0986 8786" />
     </com.google.android.material.textfield.TextInputLayout>

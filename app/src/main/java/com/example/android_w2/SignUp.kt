@@ -4,13 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import com.google.android.material.button.MaterialButton
 
 class SignUp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        var buttonSignIn = findViewById<ImageButton>(R.id.btn_sign_up)
+        val buttonSignIn = findViewById<MaterialButton>(R.id.btn_sign_up)
         buttonSignIn.setOnClickListener {
             val intent = Intent(this, Signin::class.java)
             startActivity(intent)

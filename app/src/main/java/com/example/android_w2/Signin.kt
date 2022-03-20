@@ -6,47 +6,25 @@ import android.os.Bundle
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.Toast
-
-
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.textfield.TextInputLayout;
 class Signin : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
-
-        val login = findViewById<ImageButton>(R.id.btn_login)
-        val edtEmail = findViewById<EditText>(R.id.tv_email)
-        val edtPassword = findViewById<EditText>(R.id.tv_pass)
-        if(login!=null && edtEmail!=null && edtPassword!=null){
+            val login  = findViewById<MaterialButton>(R.id.btn_login)
             login.setOnClickListener {
-                val email = edtEmail.text.toString()
-                val password = edtPassword.text.toString()
-
-                if(email == "ronaldo@gmail.com" && password == "123456"){
-                    val intent = Intent(this, Profile::class.java)
-                    startActivity(intent)
-                }else {
-                    Toast.makeText(applicationContext,
-                        "email or password sai", Toast.LENGTH_SHORT).show()
-                }
-            }
-        }
-        var buttonSignIn = findViewById<ImageButton>(R.id.btn_login)
-        buttonSignIn.setOnClickListener {
-            val intent = Intent(this, SignUp::class.java)
-            startActivity(intent)
-        }
-    }
-
-    override fun onResume() {
-        super.onResume()
-        supportActionBar?.hide();
-        /* window.decorView.apply {
-             // Hide both the navigation bar and the status bar.
-             // SYSTEM_UI_FLAG_FULLSCREEN is only available on Android 4.1 and higher, but as
-             // a general rule, you should design your app to hide the status bar whenever you
-             // hide the navigation bar.
-             systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN
-         }*/
+            val edtEmail = findViewById<com.google.android.material.textfield.TextInputLayout>(R.id.edt_email_1)
+            val edtPassword = findViewById<EditText>(R.id.tv_pass)
+            val mail =  edtEmail.editText?.text.toString().trim()
+            val password = edtPassword.text.toString().trim()
+            val intent = Intent(this, Profile::class.java)
+            val email ="ronaldo@gmail.com"
+            val pass="123456"
+            if(mail==email && password==pass) {
+               startActivity(intent)
+           }
+       }
     }
 }

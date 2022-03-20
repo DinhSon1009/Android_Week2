@@ -9,26 +9,27 @@
 
 
     <ImageButton
-        android:id="@+id/img_btn_back"
-        android:layout_width="60dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="25dp"
+        android:id="@+id/btn_back"
+        android:layout_width="57dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="0dp"
         android:background="@drawable/rounded_button"
         android:backgroundTint="@color/white"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="5dp"
+        android:src="@drawable/ic_arrow_back_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.032"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_arrow_back_24" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tv_sign_in"
         android:layout_width="247dp"
         android:layout_height="50dp"
-        android:layout_marginTop="152dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/sofia_pro_semi_bold"
         android:text="Login"
         android:textColor="@color/black"
@@ -51,10 +52,10 @@
         app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_sign_in"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintVertical_bias="0.02" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/edt_email"
+        android:id="@+id/edt_email_1"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="335dp"
         android:layout_height="67dp"
@@ -66,10 +67,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_email">
 
-        <EditText
-            android:id="@+id/tv_email"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tv_email_1"
             android:layout_width="335dp"
-            android:layout_height="65dp"
+            android:layout_height="50dp"
             android:fontFamily="@font/sofia_pro_medium"
             android:hint="Your E-mail"
             android:inputType="text" />
@@ -79,7 +80,7 @@
         android:id="@+id/tv_password"
         android:layout_width="76dp"
         android:layout_height="25dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="0dp"
         android:fontFamily="@font/sofia_pro_regular"
         android:text="Password"
         android:textColor="@color/manatee"
@@ -87,7 +88,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.053"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_email_1" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edt_pass_word"
@@ -105,7 +106,7 @@
         <EditText
             android:id="@+id/tv_pass"
             android:layout_width="335dp"
-            android:layout_height="65dp"
+            android:layout_height="50dp"
             android:fontFamily="@font/sofia_pro_medium"
             android:hint="Password"
             android:inputType="textPassword" />
@@ -115,7 +116,7 @@
         android:id="@+id/tv_forgot"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/sofia_pro_medium"
         android:lines="2"
         android:text="Forgot password?"
@@ -148,7 +149,7 @@
         android:id="@+id/tv_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="92dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/sofia_pro_medium"
         android:lines="2"
@@ -177,7 +178,7 @@
         android:id="@+id/tv_sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/sofia_pro_medium"
         android:text="Sign up with"
         android:textColor="@color/scarp_flow"
@@ -213,7 +214,7 @@
         android:id="@+id/btn_facebook"
         android:layout_width="175dp"
         android:layout_height="60dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/rounded_button"
         android:fontFamily="@font/sofia_pro_medium"
         android:paddingHorizontal="30dp"
@@ -234,7 +235,7 @@
         android:layout_width="175dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/rounded_button"
         android:fontFamily="@font/sofia_pro_medium"
         android:paddingHorizontal="30dp"
