@@ -1,0 +1,2 @@
+# Android_Week2
+XEM HÌNH ẢNH TRONG THƯ MỤC IMAGE
